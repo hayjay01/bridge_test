@@ -1,0 +1,121 @@
+@mixin screenSize($size) {
+  @if $size == large-desktop {
+    @media (min-width: 1200px) {
+    	@content;
+    }
+  }
+  @else if $size == small-desktop {
+    @media (min-width: 992px) and (max-width: 1199px) {
+    	@content;
+    }
+  }
+  @else if $size == tablet {
+    @media (min-width: 768px) and (max-width: 991px)  {
+    	@content;
+    }
+  }
+  @else if $size == ls-phone {
+    @media (min-width: 576px) and (max-width: 767px)  {
+    	@content;
+    }
+  }
+  @else if $size == ss-phone {
+    @media (max-width: 575px)  {
+    	@content;
+    }
+  }
+  @else if $size == tab-phone {
+    @media (min-width: 576px) and (max-width: 1199px)  {
+    	@content;
+    }
+  }
+}
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  #{$property}: $value;
+}
+
+@mixin pos($pos, $t: null, $r: null, $b: null, $l: null, $z: null) {
+	position: $pos;
+	top: $t;
+	right: $r;
+	bottom: $b;
+	left: $l;
+	z-index: $z;
+}
+
+@mixin shadow($shadow-value) {
+	@include prefix(box-shadow, $shadow-value, webkit ms)
+}
+
+@mixin transition($transition-value) {
+	@include prefix(transition, $transition-value, webkit ms)
+}
+
+@mixin animate-underline($color: null, $hover-color: null, $background: null, $height: null) {
+	color: $color;
+	position: relative;
+	text-decoration: none;
+
+	&:hover {
+		color: $hover-color !important;
+	}
+
+	&:before {
+		height: $height;
+		background-color: $background;
+		content: "";
+		width: 100%;
+		visibility: hidden;
+
+		@include pos(absolute, $b: 0, $l: 0)
+		@include prefix(transform, scaleX(0), webkit ms)
+		@include transition((all 0.3s ease-in-out 0s))
+	}
+
+	&:hover:before {
+		visibility: visible;
+		@include prefix(transform, scaleX(1), webkit ms)
+	}
+}
+
+@mixin placeholder-style($color: null, $font-size: null) {
+	::-webkit-input-placeholder {
+	    color: $color;
+	    font-size: $font-size;
+	}
+	:-moz-placeholder {
+	    color: $color;
+	    font-size: $font-size;
+	}
+	::-moz-placeholder {
+	    color: $color;
+	    font-size: $font-size;
+	}
+	:-ms-input-placeholder {
+	    color: $color;
+	    font-size: $font-size;
+	}
+}
+
+@mixin flex($display, $align-items, $align-content, $justify-content) {
+	display: $display;
+	align-items: $align-items;
+	align-content: $align-content;
+	justify-content: $justify-content;
+}
+
+@mixin tab-prop(){
+	background:$white-color;
+	color:$brand-color;
+	text-align:center;
+	font-size:14px;
+	&:active, &:hover,&:focus{
+		background:$brand-color;
+		color:$white-color !important;
+	}
+}

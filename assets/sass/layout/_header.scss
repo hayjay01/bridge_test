@@ -1,0 +1,51 @@
+.user-conversion {
+	// @include screenSize(large-desktop) { font-size: 16px; }
+    // @include screenSize(small-desktop) { font-size: 14px; }
+    // @include screenSize(tablet) { font-size: 14px; }
+
+    & .btn {
+    	margin-left: 10px !important;
+    	margin-right: 10px !important;
+        margin-top: 0;
+    }
+
+    @include screenSize(small-desktop) { 
+    	@include flex(flex, center, center, center)
+
+    	& .btn {
+    		margin-left: 5px !important;
+    		margin-right: 5px !important;
+    	}
+    }
+
+    @include screenSize(tablet) { 
+    	@include flex(flex, center, center, center)
+
+    	& .btn {
+    		margin-left: 5px !important;
+    		margin-right: 5px !important;
+    	}
+    }
+
+    @include screenSize(ls-phone) { 
+    	@include flex(flex, center, center, center)
+
+    	& .btn {
+    		margin-left: 5px !important;
+    		margin-right: 5px !important;
+    	}
+    }
+}
+
+.cart-count, .messages, .notifications {
+    padding: 1px 6px;
+	border-radius: 50%;
+	font-size: 13px;
+	background: $red-color;
+	color: $white-color;
+
+	@include pos(absolute, $t: -11px, $l: 65%, $z: 5000)
+}
+.notify-dropdown{
+    left:-165px;
+}

@@ -1,0 +1,464 @@
+body{
+    background-color: #F0FFF0;
+}
+
+
+#logox {
+border-radius: 10px; 
+left: 10px; 
+top: 15px; 
+position: absolute;
+}
+
+#searchx {
+    width: 450px; 
+    height: 25px; 
+    font-weight: bolder; 
+    padding-left: 15px; 
+    border-radius: 5px; 
+    text-align: justify; 
+    font-size: 15px; 
+    font-family: exo 2, colonna MT;
+}
+
+#searchx2 {
+width: 350px; 
+height: 25px;
+
+}
+
+/*== HEADER ==*/
+.header{
+	background-color: #28b1a1; 
+	height: 60px;
+	top: 0;
+    font-family: arial, sans-serif;
+    color: white;
+	/*left: 0;
+	width: 100%;
+	position: fixed;
+	color: white;
+	z-index: 7;
+*/
+}
+
+h2 {
+    color:#28b1a1;
+}
+
+.iconx {
+    font-size: 22px;
+    padding-left: 25px;
+    padding-top: 12px;
+}
+
+.iconxBox {
+   /* text-align: right; */
+}
+.slideOut {
+    background-color: #28b1a1;
+    color: white;
+}
+/* Demo */
+
+
+/*==Business Pag==*/
+#store-name{
+	position: absolute;
+	left: 380px;
+	top: 70px;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	color: #28b1a1;
+}
+
+
+#biz-nav{
+	position: absolute;
+	top: 130px;
+	left: 370px;
+}
+
+
+#biz-nav ul{
+	list-style-type: none;
+}
+
+
+#biz-nav ul li{
+	display: inline-block;
+	font-family: sans-serif;
+	margin-right: 30px;
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+#biz-nav ul li a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+#biz-nav ul li a:hover{
+	color: #28b1a1;
+}
+
+
+.biz_slide_image{
+	position: absolute;
+	top: 180px;
+	left: 200px;
+}
+
+
+#bizslide-arrow{
+	position: absolute;
+	top: 340px;
+	left: 210px;
+	width: 680px;
+	z-index: 5;
+}
+
+#bizslide-arrow a{
+	text-decoration: none;
+	color: #28b1a1;
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+
+#biz-upload{
+	position: absolute;
+	top: 500px;
+	left: 800px;
+	z-index: 7;
+}
+
+
+#biz-upload a{
+	font-family: arial black;
+	font-size: 15px;
+	text-decoration: none;
+	color: white;
+	outline: 1px solid #28b1a1;
+
+}
+
+
+.biz-leftside-bar{
+	position: fixed;
+	left: 5px;
+	top: 70px;
+	z-index: 9;
+}
+
+#nig-anchor:hover{
+	color: white;
+}
+
+.biz-leftside-bar ul{
+	list-style-type: none;
+}
+
+.biz-leftside-bar{
+	
+}
+.biz-leftside-bar-collapse {
+	background-color: white;
+	color: #353535;
+	width: 200px;
+}
+
+.biz-leftside-bar ul li{
+	text-align: justify;
+	font-size: 12px;
+	font-family: arial;
+	
+	
+}
+
+.biz-leftside-bar ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: bolder;
+	padding: 5px 5px 5px 0px;
+	
+}
+
+
+.biz-leftside-bar ul li a:hover{
+	color: #28b1a1;
+	
+}
+
+
+.biz-rightside{
+	position: absolute;
+	left: 1100px;
+	height: 1200px;
+	top: 110px;
+
+}
+#biz-knownshop{
+	position: absolute;
+	height: 300px;
+	width: 230px;
+	border: 1px solid #DDDDDD;
+}
+
+
+#biz-trends{
+	position: absolute;
+	height: 130px;
+	top: 320px;
+	width: 230px;
+	border: 1px solid #DDDDDD;
+}
+
+#biz-inventory{
+	position: absolute;
+	height: 500px;
+	top: 470px;
+	width: 230px;
+	border: 1px solid #DDDDDD;
+}
+
+#biz-recent{
+	position: absolute;
+	top: 580px;
+	left: 200px;
+	width: 700px;
+}
+
+.updates ul{
+	list-style-type: none;
+}
+
+
+.updates ul li{
+	color: #353535;
+	font-weight: bolder;
+}
+
+.biz-tradeline{
+	background-color: white;
+	position: absolute;
+	left: 200px;
+	top: 620px;
+	width: 700px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	height: 180px;
+}
+
+
+.biz-tradeline a{
+	color: #3f9f8a;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.biz-knownstore{
+	position: absolute;
+	left: 920px;
+	top: 110px;
+	width: 170px;
+	height: 1000px;
+}
+
+#biz-symk{
+	position: absolute;
+	width: 170px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	height: 500px;
+	
+}
+
+
+#biz-TR{
+	position: absolute;
+	width: 170px;
+	top: 520px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	height: 400px;
+}
+
+
+/*==STORE==*/
+#store-recent{
+	position: absolute;
+	top: 110px;
+	left: 300px;
+	width: 700px;
+}
+
+.store-updates{
+	position: absolute;
+	top: 450px;
+	z-index: 10;
+}
+
+
+.store-updates ul{
+	list-style-type: none;
+}
+
+
+.store-updates ul li{
+	color: #28b1a1;
+	font-weight: bolder;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+
+
+.store-updates ul li a{
+	color: #28b1a1;
+	text-decoration: none;
+}
+
+
+#store-inventory{
+	position: absolute;
+	height: 500px;
+	top: 320px;
+	width: 230px;
+	border: 1px solid #DDDDDD;
+}
+
+.rightside{
+	position: fixed;
+	left: 1050px;
+	top: 10px;
+	height: 800px;		
+}
+
+.trend{
+	position: fixed;
+	left: 1140px;
+	height: 130px;
+	top: 250px;
+	width: 230px;
+	border: 1px solid #DDDDDD;
+}
+
+#most-view{
+	position: fixed;
+	top: 400px;
+	left: 111;
+	font-size: 15px;
+	width: 100%;
+
+}
+ 
+#most-view ul{
+	list-style-type: none;
+}
+
+#most-view ul li a{
+	color: #28b1a1;
+}
+
+
+#merchant{
+	position: absolute;
+	top: 950px;
+	left: 200px;
+}
+
+
+#merchant ul{
+	list-style-type: none;
+}
+
+#merchant ul li{
+	display: inline-block;
+	margin-right: 30px;
+
+}
+
+
+#merchant ul li a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+#merchant ul li a:hover{
+	text-decoration: underline overline; 
+	color: #28b1a1;
+}
+
+.shopline{
+	background-color: white;
+	position: absolute;
+	left: 200px;
+	top: 1000px;
+	width: 700px;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	height: 300px; 
+}
+
+
+.leftNav, .releted-content{
+    padding:5px;
+    /*background-color:lightgray;*/
+    min-height:730px;
+    }
+    
+    .main-content {
+    
+    }
+    
+    
+    .menu li a {
+        border-color: #ddd;
+        padding-left: 15px;
+        background-color: transparent;
+        background: -webkit-linear-gradient(left,#529525 0%,#e8f710 130%);
+        margin: 1px;
+        display:block;
+        width:100%;
+        padding: 5px;
+        color: Black;
+    }
+    .sidebar-nav {
+        display: block;
+        padding: 5px 15px;
+        color: #333;
+        font-size:15px;
+        text-decoration: none;
+        border-left: solid 3px #333;
+        background-color: #f3f3f3;
+    }
+    
+    .list-unstyled {
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    .article-footer {
+        background-color:#f3f3f3;
+        border: 1px solid #ddd;
+        margin:auto;
+    }
+    
+    .btn-danger:active, .btn-danger.active {
+        background-color:forestgreen;
+        border:1px solid green;
+    }
+    
+    .tooltip.top .tooltip-arrow {
+        border-top-color:forestgreen;
+    }
+    
+    .tooltip-inner {
+        background-color:forestgreen;
+    }

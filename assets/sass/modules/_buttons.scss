@@ -1,0 +1,136 @@
+.material-button span {
+	@include prefix(transition, 400ms cubic-bezier(.4, 0, .2, 1), webkit ms);
+}
+
+.material-button, .alt-2, .alt-2 span, .box {
+   	@include prefix(transition, 400ms cubic-bezier(.4, 0, .2, 1), webkit ms);
+}
+
+.material-button, .alt-2 {
+   	width: 100px;
+   	height: 100px;
+   	border-radius: 50%;
+   	cursor: pointer;
+   	display: block;
+   	background: $brand-color !important;
+
+   	@include pos(absolute, $t: 40px, $r: -50px, $z: 100);
+   	@include prefix(transform, translate(0%, 0%), webkit ms);
+   	@include screenSize(ss-phone) {
+   		right: -20px;
+   	}
+
+   	& span {
+	   	margin-left: -10px;
+	   	font-size: 25px;
+	   	color: $white-color;
+
+		@include pos(absolute, $t: 42%, $l: 50%, $z: inherit);
+	}
+	&.active {
+	   	top: 50%;
+	   	right: 50%;
+
+	   	@include prefix(transform, translate(50%, -50%) rotate(0deg), webkit ms);
+	}
+}
+
+.btn-shadow {
+	@include shadow((0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)));
+}
+
+.btn {
+	font-size: inherit;
+
+	@include screenSize(small-desktop) { padding: .5rem 1rem; }
+	@include screenSize(tablet) { padding: .5rem 1rem; }
+	@include screenSize(ls-phone) { padding: .5rem 1rem; }
+}
+
+.btn-flat {
+	position: relative;
+	padding: .85rem 2.13rem;
+	border: none;
+	margin: 6px;
+	text-decoration: none;
+	outline: 0 !important;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: $brand-color;
+	background: $transparent-color;
+
+	&:hover, &:active, &:focus {
+		background: $transparent-color;
+	}
+
+	@include screenSize(small-desktop) { padding: .5rem 1rem; }
+	@include screenSize(tablet) { padding: .5rem 1rem; }
+	@include screenSize(ls-phone) { padding: .5rem 1rem; }
+}
+
+.btn-brand {
+	background: $brand-color;
+
+	&:hover, &:active, &:focus {
+		background: $brand-color-op8;
+	}
+}
+
+.btn-brand-lite {
+	background: $brand-color-lite;
+
+	&:hover, &:active, &:focus {
+		background: $brand-color-lite-op;
+	}
+}
+
+.btn-outline-brand {
+	border: 2px solid $brand-color;
+	color: $brand-color!important;
+	background-color: $transparent-color;
+
+	&:hover, &:active, &:focus {
+		border: 2px solid $brand-color;
+		color: $brand-color!important;
+		background-color: $transparent-color;
+	}
+}
+
+[data-original-title] {
+	background: $brand-color-lite;
+	color: $dark-color;
+}
+
+.card .btn-group .btn {
+	padding-left: 31.7px;
+    padding-right: 31.7px;
+}
+
+[data-page="tradeline"] .card .btn-group .btn {
+	padding-left: 26.7px;
+    padding-right: 26.7px;
+}
+
+[data-page="products-page"] .card .btn-group .btn {
+	padding-left: 37.2px;
+    padding-right: 37.2px;
+}
+
+.btn-group button{
+	color: $brand-color!important;
+}
+
+button.btn-upload {
+	width: 90px;
+	height: 90px;
+	margin-left: 5px;
+	text-decoration: none;
+	outline: 0 !important;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #16a085;
+	background: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	
+	@include pos(absolute, $l: 0)
+}

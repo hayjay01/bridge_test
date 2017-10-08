@@ -1,0 +1,228 @@
+body {
+	background: $brand-color-lite;
+}
+
+[data-page="login"] .container {
+
+	@include screenSize(large-desktop) { width: 550px; }
+	@include screenSize(small-desktop) { width: 500px; }
+	@include screenSize(tablet) { width: 450px; }
+	@include screenSize(ls-phone) { width: 400px; }
+	@include screenSize(ss-phone) { width: 350px; }
+	@include placeholder-style($color: $brand-color-dark, $font-size: 1rem)
+
+	& input[type="date"]::-webkit-inner-spin-button { display: none; }
+}
+
+[data-page="araha-market"], [data-page="hiring"]  {
+	& .carousel-caption {
+		font-size: 48px;
+
+		@include pos(absolute, $t: 25%, $r: 100%);
+
+		& p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.card.box {
+   	position: relative;
+   	opacity: 1;
+   	padding: 60px 50px;
+   	width: 100%;
+   	z-index: 5;
+
+   	@include prefix(transform, scale(1), webkit ms);
+
+   	&:after {
+   		content: "";
+   		height: 30px;
+   		background: rgba(255, 255, 255, .6);
+
+   		@include prefix(transform, scale(.95), webkit ms);
+   		@include pos(absolute, $t: -10px, $l: 0, $z: -1);
+   	}
+}
+
+.box.back {
+   	top: -20px;
+   	opacity: .8;
+   	z-index: -1;
+
+   	@include prefix(transform, scale(.95), webkit ms);
+}
+
+.overbox {
+   	width: 100%;
+   	height: 950px;
+   	padding: 50px 20px;
+   	margin-bottom: 50px;
+
+   	@include pos(absolute, $t: 0, $l: 0, $z: 111);
+   	@include screenSize(small-desktop) {
+   		height: 900px;
+   	}
+   	@include screenSize(tablet) {
+   		height: 900px;
+   	}
+   	@include screenSize(ls-phone) {
+   		height: 850px;
+   	}
+   	@include screenSize(ss-phone) {
+   		height: 1300px;
+   	}
+
+   	& .card-block, & .title, & .sub-title, & .row, & .divider {
+    	position: relative;
+    	color: $white-color;
+    	display: none;
+    	z-index: 110;
+   	}
+   	& form .row{
+		display: flex !important;
+	}
+   	& input, & select, & input:focus, & select:focus {
+   		background: $white-color;
+   	}
+   	& h3.title:after {
+   		background: $white-color;
+   		width: 4px;
+   	}
+}
+
+.rotate {
+	@include prefix(transform, rotate(45deg), webkit ms);
+}
+
+.form-group {
+	float: left;
+	margin-bottom: 0;
+}
+
+.scale-overbox {
+	border: none;
+	box-shadow: none;
+	background: $transparent-color;
+	height: 20px;
+	
+	@include prefix(transform, translateX(15px), webkit ms);
+	@include screenSize(large-desktop) { width: 520px; }
+	@include screenSize(small-desktop) { width: 470px; }
+	@include screenSize(tablet) { width: 420px; }
+	@include screenSize(ls-phone) { width: 370px; }
+
+	& .material-button {
+		z-index: 100;
+	}
+
+}
+
+svg .mapsvg-region{
+  	fill: white;
+  	fill-rule: evenodd;
+  	stroke: #74808E;
+
+  	@include transition((all 0.55s ease))
+
+  	&:hover {
+  		fill: $brand-color;
+  	}
+}
+
+.divider hr {
+	width: 47%;
+	border-color: $brand-color-dark;
+
+	@include screenSize(ss-phone) {
+		width: 46%;
+	}
+}
+
+del {
+    color: $red-color;
+}
+del span {
+    color: $white-color;
+}
+
+.carousel-ad-overlay {
+	@include screenSize(small-desktop) {
+		padding: 10px;
+		
+		@include pos(absolute, $t: 55%, $l: 2%)
+	}
+
+	@include screenSize(tablet) {
+		padding: 10px;
+		
+		@include pos(absolute, $t: 55%, $l: 2%)
+	}
+
+	padding: 20px;
+
+	@include pos(absolute, $t: 65%, $l: 14%)
+}
+
+.media-body ul li a {
+	color: $brand-color;
+
+	&:hover, &:active, &:focus, {
+		color: $brand-color;
+	}
+}
+
+#product-img-wrapper{
+	padding: 10px;
+	height: 120px;
+	border-radius: 2px;
+	justify-content: flex-start !important;
+	border: 1px solid $dark-color-lite;
+
+	& ul#product-imgs {
+		margin: 0;
+		display: inherit;
+
+		& img {
+			display: inline;
+			padding:5px;
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	& .add-img {
+		width: 100px;
+		height: 100px;
+		padding: 5px;
+
+		& .product-img-input {
+			position: relative !important;
+			width: 100px;
+			display: none;
+		}
+	}
+}
+
+#product-upload-form div:last-child {
+	position: relative !important;
+	text-align: right !important;
+	margin-bottom: 20px !important;
+	height: 56.19px;
+
+	& .btn-flat {
+		height: 44.19px;
+
+		@include pos(absolute, $r: 118.156px)
+	}
+
+	& input[type="file"] {
+		width: 100px;
+		display: none !important;
+	}
+
+	& .btn-brand {
+		height: 44.19px;
+		
+	}
+}

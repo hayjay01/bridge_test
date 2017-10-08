@@ -1,0 +1,47 @@
+.hover-underline {
+	@include animate-underline($hover-color: $brand-color, $background: $brand-color, $height: 2px)
+}
+
+.list-group-item-action:active, .list-group-item-action:focus, .list-group-item-action:hover {
+    color: $white-color;
+    background-color: $brand-color;
+    @include transition((all 0.3s ease-in-out))
+}
+
+.nav-item a.nav-link {
+	color: $brand-color-dark;
+	font-size: 12px;
+
+	&.active {
+		color: $brand-color;
+	}
+}
+
+.user-type-navbar {
+	padding: 8px 4px;
+
+	& .user-type-nav {
+		@include screenSize(tablet) {
+			flex-direction: column;
+		}
+		@include screenSize(ls-phone) {
+			flex-direction: column;
+		}
+	}
+}
+
+.nav-link {
+	@include screenSize(small-desktop) {
+		padding: 8px;
+	}
+}
+
+.tooltip > .tooltip-inner {
+    background-color: $brand-color-lite; 
+    color: $brand-color-dark; 
+    border: 1px solid $brand-color;
+}
+
+.tooltip > .tooltip-arrow {
+  	border-top: 5px solid $brand-color;
+}
